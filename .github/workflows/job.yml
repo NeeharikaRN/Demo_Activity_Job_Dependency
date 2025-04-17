@@ -1,0 +1,19 @@
+name: Parallel Jobs Example
+
+on: [push]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is Job 1"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is Job 2"
+
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is Job 3"
